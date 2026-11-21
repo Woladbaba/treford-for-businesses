@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "treg": {
+      "type": "url",
+      "url": "https://treg.to/mcp/",
+      "headers": {
+        "Authorization": "Bearer eyJ1aWQiOjEwMTY5NiwidHYiOjAsImF1ZCI6ImlkZW50aXR5Iiwib3JnIjoib2x1d29sZS1zLXRlYW0iLCJrZyI6MCwic2NwIjoidGVhbSJ9.-kYhjDOQaNEUmtR63k_SRR6StTQfAibpJ2nzafVriKk"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "miro@miro-ai": true
+  }
+}

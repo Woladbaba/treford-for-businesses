@@ -35,4 +35,59 @@ Treford: [one-line summary to add after research]
 
 ## Tools
 
-<!-- Add tool configs, API references, and integration notes here -->
+### Treg (CLI + MCP, paid data lookups)
+
+- **What it does:** 4,200+ external tools across 136 providers (SEO/SERP, backlinks, social, enrichment, ads, scraping, generation). Credentials injected server-side.
+- **Rule: Check the price before every call.** Run `treg catalog get <id>` to see the cost, and tell me before calling anything over $0.01.
+- **Billing:** Pay-per-call against team prepaid balance. Run `treg balance` before large jobs.
+- **Skill reference:** `.claude/skills/treg-tools.md` for full workflow and rules.
+
+### Miro (MCP, diagrams)
+
+- **What it does:** Create and edit diagrams, maps, and visual boards on Miro.
+- **When to use:** GTM system maps, journey maps, workflow diagrams, anything visual that needs collaboration.
+
+### Notion (MCP, finished docs)
+
+- **What it does:** Publish finished documents to Notion for the team to read.
+- **Rule:** GitHub stays the source of truth. Write and version everything here first, then push to Notion only when it is ready for others.
+- **When to use:** Sharing completed context docs, playbooks, or briefs with the wider team.
+
+### Skills (`.claude/skills/`)
+
+- **signal-matrix** — Build ICP/signal matrices: segments, personas, and the signals that find them.
+- **campaign-strategy** — Generate 15-25+ outbound campaign ideas with targeting, personalization, and priority tiers.
+- **build-workflow-spec** — Turn one campaign idea into a full workflow spec (intent, signals, routing, cadence).
+- **campaign-copy** — Write outbound copy for a workflow spec.
+- **campaign-qa** — QA a Clay table or email campaign against its workflow spec.
+- **campaign-contract** — Write the build sheet (contract.md) for one Clay campaign.
+- **build-clay** — Build, audit, or repair a production Clay outbound workbook.
+- **clay-build-plan** — Plan a Clay table build before executing it.
+- **design-clay-table-json** — Write the Clay table JSON blueprint from a campaign contract.
+- **import-clay-table** — Import a Clay table JSON into the workspace and prove it on a small run.
+- **save-clay-schema** — Export an approved Clay table to the local registry.
+- **export-tables** — Export Clay tables to local CSV files.
+- **calculate-costs** — Report real dollar spend and credit usage of a Clay table's columns.
+- **workspace-cost-audit** — Report what a Clay workspace spent in a month.
+- **prompt-builder** — Build or repair a reusable prompt for Clay AI columns or other pipelines.
+- **miro-gtm-flowchart** — Draw a GTM system as a flow chart on a Miro board.
+- **inbox-placement-test** — Test email inbox placement.
+- **agent-browser** — Browser automation: scrape, fill forms, click, screenshot.
+- **crawl4ai** — Crawl web pages into clean Markdown or JSON (free, local).
+
+### Playbooks (`knowledge-base/playbooks/`)
+
+- **copy-frameworks.md** — Outbound copy frameworks and structures.
+- **copy-iron-laws.md** — Non-negotiable rules for outbound copy.
+- **copy-bans.yaml** — Banned words and phrases in outbound copy.
+- **linkedin-dm-frameworks.md** — LinkedIn DM templates and frameworks.
+- **signal-matrix-framework.md** — How to build a signal matrix from scratch.
+- **workflow-anatomy.md** — Anatomy of an outbound workflow.
+- **clay/** — Clay-specific playbooks and reference.
+- **templates/** — Reusable templates.
+
+### Tools (`tools/`)
+
+- **agent-browser/** — Browser automation agent config.
+- **crawl4ai/** — Crawl4ai runner config.
+- **rex/** — Rex tool config.
